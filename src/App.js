@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import video from '../src/Images/12.mp4'
+import Navbar from './components/Navbar'
+import HomePage from './components/HomePage';
+import Travelguide from './components/Travelguide';
+import Footer from './components/Footer';
 
 function App() {
   return (
+    <>
     <div className="App">
+      <Navbar />
+      <div className="video-container">
+        <video autoPlay loop muted className="background-video">
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>EXPLORE. DREAM. DISCOVER.</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the globe.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Please tag along!</p>
+        <button className="explore-button">START EXPLORE</button>
       </header>
+
     </div>
+    <HomePage />
+    <Travelguide />
+    <Footer />
+    </>
   );
 }
 

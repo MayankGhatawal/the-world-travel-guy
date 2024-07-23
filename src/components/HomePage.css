@@ -1,0 +1,116 @@
+.featured {
+    display: flex;
+    margin-top: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90px;
+    align-items: center;
+    text-align: center;
+}
+.featured::before,
+.featured::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+.featured::before {
+    margin-right: 10px;
+}
+.featured::after {
+    margin-left: 10px;
+}
+.news-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-name img{
+    width: 125px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition-duration: 0.3s;
+}
+
+.news-name img:hover{
+    filter: brightness(120%);
+}
+
+.Links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Links img{
+    margin-top: 100px;
+    margin-left: 30px;
+    border-radius: 5px;
+    width: 400px;
+    transition-duration: 0.3s;
+}
+
+.Links img:hover{
+    filter: brightness(90%);
+}
+
+.Links-format{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Links-format p{
+    font-size: x-large;
+    font-family: cursive;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.Featured-context{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Featured-context img{
+    width: 500px;
+    filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.484));
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.Featured-font{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.title{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title1{
+    font-size: large;
+    margin: 20px;
+    color: #6e6767;
+}
+
+.Read-button{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: transparent;
+    padding: 0.8rem 1.6rem;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Read-button:hover {
+    background-color: #ff4500;
+    color: white;
+    border: 3px solid #ff4500;
+  }
